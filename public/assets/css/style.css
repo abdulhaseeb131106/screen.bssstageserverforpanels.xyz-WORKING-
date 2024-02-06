@@ -1,0 +1,209 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@900&family=Passion+One:wght@700&family=Roboto:ital,wght@1,900&family=Tourney:ital,wght@1,100&display=swap');*/
+
+/**{*/
+/*    margin:0%;*/
+/*    padding:0%;*/
+/*    font-family: 'Roboto', sans-serif;*/
+
+
+/*}*/
+
+/*.box*/
+/*{*/
+/*    width: 330px;*/
+/*    height: 80px;*/
+/*    border: 1px solid black ;*/
+/*    background-color:hsl(25.71deg 41.94% 42.55%); */
+/*    float: left;*/
+/*    color: #fff;*/
+/*    text-align: center;*/
+   
+
+/*}*/
+
+/*.box0 h1*/
+/* {*/
+/*font-size: 3.5rem;*/
+/* }*/
+/*.box0*/
+/*{*/
+/*    width: 320px;*/
+/*    height: 80px;*/
+/*    border: 1px solid black ;*/
+/*    background-color:hsl(25.71deg 41.94% 42.55%); */
+/*    float: right;*/
+/*    margin-top:1px ;*/
+/*    margin-bottom:1px;*/
+/*    color: #fff;*/
+/*    text-align: center;*/
+    
+    
+/*}*/
+
+/*.carousel-item img*/
+/*{*/
+/* border: darkblue 5px solid;*/
+/* border-radius: 5%;*/
+/*}*/
+/*.slide{   */
+/*height:550px;*/
+/* border-radius: 5%;*/
+
+/*}*/
+/*.s1{*/
+/*    padding-top: 10%;*/
+
+/*}*/
+/*.side h1{*/
+/*    color: #fff;*/
+/*    font-family: 'Tourney', sans-serif;*/
+/*    font-size: 3rem;*/
+/*    text-align: center;*/
+/*}*/
+/*.side{*/
+/*   background-image:url(../img/right.jpeg);*/
+/*   background-repeat:no-repeat ;*/
+/*   background-size: cover;*/
+/*   background-position: center;*/
+/*   height:590px;*/
+/*   width: 200px;*/
+/*   border-radius: 5%;*/
+/*}*/
+
+/*.table{*/
+/*    border: none;*/
+/*    line-height: 4rem;*/
+
+/*}*/
+/*thead{*/
+/*    color: #fff;*/
+/*    font-size: 1.2rem;*/
+    
+/*}*/
+/*tbody{*/
+/*    color: #fff;*/
+/*    font-size: 1.4rem;*/
+/*}*/
+/*.jamt{*/
+/*    background-color:rgb(154 102 63);*/
+/*    text-align: center;*/
+/*    color: #fff;*/
+/*}*/
+/*.news{*/
+/*    width: 400px;*/
+/*    height: 92px;*/
+/*    background-color:rgb(58 17 11) ;*/
+/*    text-align: center;*/
+/*    color: #fff;*/
+/*}*/
+/*.logo{*/
+/*    width: 400px;*/
+/*    height: 92px;*/
+/*    background-color:rgb(154 102 63);*/
+/*    text-align: center;*/
+/*    color: #fff;*/
+    
+/*}*/
+
+
+        /* Your existing CSS code with adjustments for responsiveness */
+        @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@900&family=Passion+One:wght@700&family=Roboto:ital,wght@1,900&family=Tourney:ital,wght@1,100&display=swap');
+
+        * {
+            margin: 0%;
+            padding: 0%;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Add Bootstrap classes for responsiveness */
+        /* Adjustments to maintain responsiveness */
+        .col-md-3.side {
+            background-image: url(../img/right.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: auto;
+            width: 100%;
+            border-radius: 5%;
+            padding: 15px; /* Adjust padding as needed */
+        }
+
+        .col-md-6.box,
+        .col-md-6.box0 {
+            margin-bottom: 20px; /* Add margin for separation between elements */
+        }
+
+        .carousel-item img {
+            max-width: 100%; /* Ensure images don't overflow their containers */
+            height: auto; /* Maintain aspect ratio */
+            border: darkblue 5px solid;
+            border-radius: 5%;
+        }
+
+        .slide {
+            height: 550px;
+            border-radius: 5%;
+        }
+
+        .s1 {
+            padding-top: 10%;
+        }
+
+      
+
+
+.side h1{
+    color: #fff;
+    font-family: 'Tourney', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+.side{
+   background-image:url(../img/right.jpeg);
+   background-repeat:no-repeat ;
+   background-size: cover;
+   background-position: center;
+   height:590px;
+   width: 200px;
+   border-radius: 5%;
+}
+
+.table{
+    border: none;
+    line-height: 4rem;
+
+}
+thead{
+    color: #fff;
+    font-size: 1.2rem;
+    
+}
+tbody{
+    color: #fff;
+    font-size: 1.4rem;
+}
+.jamt{
+    background-color:rgb(154 102 63);
+    text-align: center;
+    color: #fff;
+}
+.news{
+    width: 400px;
+    height: 92px;
+    background-color:rgb(58 17 11) ;
+    text-align: center;
+    color: #fff;
+}
+.logo{
+    width: 400px;
+    height: 92px;
+    background-color:rgb(154 102 63);
+    text-align: center;
+    color: #fff;
+    
+}
+
+@media (max-width: 768px) {
+            .side {
+                width: 100%;
+            }
+

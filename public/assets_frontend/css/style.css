@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@900&family=Passion+One:wght@700&family=Roboto:ital,wght@1,900&family=Tourney:ital,wght@1,100&display=swap');
+
+*{
+    margin:0%;
+    padding:0%;
+    padding:0%;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+.box
+{
+    width: 330px;
+    height: 80px;
+    border: 1px solid black ;
+    background-color:hsl(25.71deg 41.94% 42.55%);
+    float: left;
+    color: #fff;
+    text-align: center;
+    box-sizing:border-box;
+    
+
+
+}
+
+
+.box0 h1
+ {
+font-size: 3.5rem;
+padding-top:10px;
+
+ }
+ 
+.box0
+{
+    width: 320px;
+    height: 80px;
+    border: 1px solid black ;
+    background-color:hsl(25.71deg 41.94% 42.55%);
+    float: right;
+    margin-top:1px ;
+    margin-bottom:1px;
+    color: #fff;
+    text-align: center;
+
+
+}
+
+
+.carousel-item .imag
+{
+ border: darkblue 5px solid;
+ border-radius: 5%;
+ height:620px;
+ margin-bottom:10px;
+ 
+}
+.logoimage{
+    border:none;
+}
+
+.s1{
+    padding-top: 13%;
+
+}
+.side h1{
+    color: #fff;
+    font-family: 'Tourney', sans-serif;
+    text-align: right;
+    font-size:4rem;
+    
+    
+}
+.side{
+   background-image:url(../img/pac.png);
+   background-repeat:no-repeat ;
+   background-size: cover;
+   background-position: center;
+   height:700px;
+   width: 200px;
+   margin-bottom:10px;
+   border-radius: 5%;
+   overflow:hidden;
+}
+
+.azanjamt{
+    
+    line-height:4rem;
+    font-size:1.5rem;
+
+}
+.sbody{
+    
+    font-size:1.5rem;
+    line-height: 4rem;
+}
+thead{
+    color: #fff;
+   
+
+}
+tbody{
+    color: #fff;
+    
+}
+
+.jamt{
+    background-color:rgb(154 102 63);
+    text-align: center;
+    color: #fff;
+    padding-top:20px;
+    
+}
+.news h1{
+    padding-top: 2%;
+
+}
+.news{
+    margin-top:10px;
+    width: 400px;
+    height: 100px;
+    background-color:rgb(58 17 11) ;
+    text-align: center;
+    color: #fff;
+}
+.logo img{
+ width: 200px;
+ height: 100px;
+
+
+}
+.logo{
+    width: 500px;
+    height: 100px;
+    background-color:rgb(154 102 63);
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    
+}
+
+.footer{
+    margin-top:20px;
+}
+
+@media (mix-width: 768px) {
+    
+thead{
+    
+    color: #fff;
+    font-size: 2rem;
+    
+}
+    
+tbody{
+    color: #fff;
+    font-size: 2rem;
+}
+td{
+    
+    padding-top:10px;
+    
+}
+
+
+}
+
+@media screen  and (min-width: 576px) and (max-width: 767.98px) {
+   
+.azanjamt{
+    
+    line-height: 4rem;
+
+}
+.sbody{
+    line-height: 8rem;
+}
+
+ }
+
+
+@media screen  and (min-width: 992px) and (max-width: 1199.98px) {
+
+ .side h1{
+    color: #fff;
+    font-family: 'Tourney', sans-serif;
+    text-align: center;
+    font-size: 8rem;
+}
+.azanjamt{
+    border: none;
+    line-height: 5rem;
+
+}
+.sbody{
+     border: none;
+    line-height: 5rem;
+}
+
+
+}
