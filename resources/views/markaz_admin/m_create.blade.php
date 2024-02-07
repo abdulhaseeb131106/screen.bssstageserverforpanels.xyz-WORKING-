@@ -53,7 +53,7 @@
             </a>
         </div>
             <div class="col-md-3">
-            <a href="{{ asset('month_timings/feb.csv') }}" class="btn btn-outline-primary w-100" download>
+            <a href="{{ asset('month_timings/february.csv') }}" class="btn btn-outline-primary w-100" download>
                February File <i class="fa-solid fa-download"></i> 
                 
             </a>

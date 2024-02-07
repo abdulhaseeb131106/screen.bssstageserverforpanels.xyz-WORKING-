@@ -61,7 +61,7 @@ class ScreenViewController extends Controller
             $request->session()->forget('date_incremented');
         }
 
-        $half_date = Carbon::now()->format('j M');
+        $half_date = Carbon::now()->format('j F');
         $year = Carbon::now()->format(' Y');
         $eng_date = $half_date;
         return view('index', compact('prayer', 'new','slider','logos' ,'centre_id','side','hijri_date', 'eng_date', 'year'));

@@ -131,32 +131,37 @@ class MarkazAdminController extends Controller
 
         $results = prayers_timing::whereMonth('date', '=', Carbon::createFromFormat('Y-m-d', $convertedDate)->month)
          ->whereDay('date', '=', Carbon::createFromFormat('Y-m-d', $convertedDate)->day)
-             ->get();
-              $results->each->delete();
-             
+         ->get();
+          $results->each->delete();
                     
-        prayers_timing::create([ 
+        $time = prayers_timing::create([ 
             'date' => $convertedDate,
-            'fajar_jamat' => $row[1] ?? null,
-            'zuhr_jamat' => $row[2] ?? null,
-            'asr_jamat' => $row[3] ?? null,
-            'maghrib_jamat' => $row[4] ?? null,
-            'Isha_jamat' => $row[5] ?? null,
-            'sun_rise' => $row[6] ?? null,
-            'chaasht' => $row[7] ?? null,
-            'zawal' => $row[8] ?? null,
-            'jumua' => $row[9] ?? null,
-            'jumma_ijtimah' => $row[10] ?? null,
-            'centre_id' => auth()->user()->centre_id       
+            'fajar_start' => $row[1] ?? null,
+            'fajar_jamat' => $row[2] ?? null,
+            'zuhr_start' => $row[3] ?? null,
+            'zuhr_jamat' => $row[4] ?? null,
+            'asar_start' => $row[5] ?? null,
+            'asr_jamat' => $row[6] ?? null,
+            'maghrib_start' => $row[7] ?? null,
+            'maghrib_jamat' => $row[8] ?? null,
+            'isha_start' => $row[9] ?? null,
+            'Isha_jamat' => $row[10] ?? null,
+            'sun_rise' => $row[11] ?? null,
+            'chaasht' => $row[12] ?? null,
+            'zawal' => $row[13] ?? null,
+            'jumua' => $row[14] ?? null,
+            'jumma_ijtimah' => $row[15] ?? null,
+            'centre_id' => auth()->user()->centre_id
         ]);
+        
     }
 
         return redirect()->back()->with('success', 'CSV file uploaded successfully!');
     } catch (\Exception $e) {
         return redirect()->back()->with('error', $e->getMessage());
+        }
     }
     
-    }
     
     // public function importCSV()
     // {

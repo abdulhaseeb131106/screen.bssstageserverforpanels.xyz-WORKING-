@@ -253,66 +253,66 @@ div#timeUntilNextJamat {
   <div class="grid-container">
     <div class="grid-item container-1"
       style="background-image: url('/images/{{$side->image_name}}'); background-size: cover;">
-      <h1 class="heading-title">NAMAZ TIMING</h1>
+      <h1 style="font-size: 1.7em;" class="heading-title">NAMAZ TIMING</h1>
       <table style="height: 80%;margin-left: auto;margin-right: 20px;">
         <thead>
-          <tr>
+          <tr style="font-size: 1.3em;">
             <th></th>
-            <th class="heading">AZAN</th>
-            <th class="heading">JAMAT</th>
+            <th class="heading">START TIME</th>
+            <th class="heading">JAMAT TIME</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td style="font-size: 1.3em;">FAJAR</td>
-            <td>{{\Carbon\Carbon::parse($prayer->fajar_azan)->format('h:i A')}}</td>
+          <tr style="font-size: 1.4em;">
+            <td>FAJAR</td>
+            <td>{{\Carbon\Carbon::parse($prayer->fajar_start)->format('h:i A')}}</td>
             <td>{{\Carbon\Carbon::parse($prayer->fajar_jamat)->format('h:i A')}}</td>
           </tr>
             @if ($prayer)
-          <tr>
-            <td style="font-size: 1.3em;">ZUHR</td>
-            <td>{{\Carbon\Carbon::parse($prayer->zuhr_azan)->format('h:i A')}}</td>
+          <tr style="font-size: 1.4em;">
+            <td>ZUHR</td>
+            <td>{{\Carbon\Carbon::parse($prayer->zuhr_start)->format('h:i A')}}</td>
             <td>{{\Carbon\Carbon::parse($prayer->zuhr_jamat)->format('h:i A')}}</td>
           </tr>
-          <tr>
-            <td style="font-size: 1.3em;">ASR</td>
-            <td>{{\Carbon\Carbon::parse($prayer->asr_azan)->format('h:i A')}}</td>
+          <tr style="font-size: 1.4em;">
+            <td>ASR</td>
+            <td>{{\Carbon\Carbon::parse($prayer->asr_start)->format('h:i A')}}</td>
             <td>{{\Carbon\Carbon::parse($prayer->asr_jamat)->format('h:i A')}}</td>
           </tr>
-          <tr>
-            <td style="font-size: 1.3em;">MAGHRIB</td>
-            <td>{{\Carbon\Carbon::parse($prayer->maghrib_azan)->format('h:i A')}}</td>
+          <tr style="font-size: 1.4em;">
+            <td>MAGHRIB</td>
+            <td>{{\Carbon\Carbon::parse($prayer->maghrib_start)->format('h:i A')}}</td>
             <td>{{\Carbon\Carbon::parse($prayer->maghrib_jamat)->format('h:i A')}}</td>
           </tr>
-          <tr>
-            <td style="font-size: 1.3em;">ISHA</td>
-            <td>{{\Carbon\Carbon::parse($prayer->isha_azan)->format('h:i A')}}</td>
+          <tr style="font-size: 1.4em;">
+            <td>ISHA</td>
+            <td>{{\Carbon\Carbon::parse($prayer->isha_start)->format('h:i A')}}</td>
             <td>{{\Carbon\Carbon::parse($prayer->Isha_jamat)->format('h:i A')}}</td>
             
           </tr>
           @else
-          <tr>
-            <td style="font-size: 1.3em;">FAJAR</td>
+          <tr style="font-size: 1.4em;">
+            <td>FAJAR</td>
             <td>00:00:00</td>
             <td>00:00:00</td>
           </tr>
-          <tr>
-            <td style="font-size: 1.3em;">ZUHR</td>
+          <tr style="font-size: 1.4em;">
+            <td>ZUHR</td>
             <td>00:00:00</td>
             <td>00:00:00</td>
           </tr>
-          <tr>
-            <td style="font-size: 1.3em;">ASR</td>
+          <tr style="font-size: 1.4em;">
+            <td>ASR</td>
             <td>00:00:00</td>
             <td>00:00:00</td>
           </tr>
-          <tr>
-            <td style="font-size: 1.3em;">MAGHRIB</td>
+          <tr style="font-size: 1.4em;">
+            <td>MAGHRIB</td>
             <td>00:00:00</td>
             <td>00:00:00</td>
           </tr>
-          <tr>
-            <td style="font-size: 1.3em;">ISHA</td>
+          <tr style="font-size: 1.4em;">
+            <td>ISHA</td>
             <td>00:00:00</td>
             <td>00:00:00</td>
           </tr>
@@ -322,7 +322,7 @@ div#timeUntilNextJamat {
       </table>
     </div>
    <div class="grid-item container-2" style="background: {{ $gradient }};">
-  <h2 style="color: white;">{{ \App\Models\Centre::where('id', $centre_id)->value('centre_name') }}</h2>
+  <h1 style="color: white;">{{ \App\Models\Centre::where('id', $centre_id)->value('centre_name') }}</h1>
 </div>
     <div class="grid-item slider-container slider-container-1">
         <div class="slider">
@@ -339,7 +339,7 @@ div#timeUntilNextJamat {
     </div>
 
    <div class="grid-item container-3" style="background: {{ $gradient }};">
-  <h1 style="color: white; text-align: center;">
+  <h1 style="color: white; text-align: center; font-size: 3.1rem; ">
     <div id="MyClockDisplay" class="clock"></div>
   </h1>
 </div>
@@ -357,57 +357,57 @@ div#timeUntilNextJamat {
             @if($prayer)
           
             <thead>
-          <tr>
+          <tr style="font-size: 1.2em;">
             <th></th>
             <th class="heading">{{ $date }} {{ $month}} <br> 1445</th>
             <th class="heading">{{$eng_date}}<br>{{ $year }}</th>
           </tr>
         </thead>
          
-          <tr>
-            <td style="font-size: 1.3em;">SUN RISE</td>
+          <tr style="font-size: 1.4em;">
+            <td>SUN RISE</td>
             <td>{{ \Carbon\Carbon::parse($prayer->sun_rise)->format('h:i A') }}</td>
           </tr>
-          <tr>
-            <td style="font-size: 1.3em;">ISHRAQ/<br>CHASHT</td>
+          <tr style="font-size: 1.4em;">
+            <td>ISHRAQ/<br>CHASHT</td>
             <td>{{ \Carbon\Carbon::parse($prayer->chaasht)->format('h:i A') }}</td>
           </tr>
-          <tr>
-            <td style="font-size: 1.3em;">ZAWAL</td>
+          <tr style="font-size: 1.4em;">
+            <td>ZAWAL</td>
             <td>{{ \Carbon\Carbon::parse($prayer->zawal)->format('h:i A') }} </td>
           </tr>
-          <tr>
-            <td style="font-size: 1.3em;">JUMMUA</td>
+          <tr style="font-size: 1.4em;">
+            <td>JUMMUA</td>
             <td>{{ \Carbon\Carbon::parse($prayer->jumua)->format('h:i A') }}</td>
             <td>{{ \Carbon\Carbon::parse($prayer->jumah_azan)->format('h:i A') }}</td>
           </tr>
-          <tr>
-            <td style="font-size: 1.3em;">IJTIMA</td>
+          <tr style="font-size: 1.4em;">
+            <td>IJTIMA</td>
             <td>{{ \Carbon\Carbon::parse($prayer->jumma_ijtimah)->format('h:i A') }}</td>
           </tr>
           @else
-          <tr>
-            <td style="font-size: 1.3em;">FAJAR</td>
+          <tr style="font-size: 1.4em;">
+            <td>FAJAR</td>
             <td>00:00:00</td>
             <td>00:00:00</td>
           </tr>
-          <tr>
-            <td style="font-size: 1.3em;">ZUHR</td>
+          <tr style="font-size: 1.4em;">
+            <td>ZUHR</td>
             <td>00:00:00</td>
             <td>00:00:00</td>
           </tr>
-          <tr>
-            <td style="font-size: 1.3em;">ASR</td>
+          <tr style="font-size: 1.4em;">
+            <td>ASR</td>
             <td>00:00:00</td>
             <td>00:00:00</td>
           </tr>
-          <tr>
-            <td style="font-size: 1.3em;">MAGHRIB</td>
+          <tr style="font-size: 1.4em;">
+            <td>MAGHRIB</td>
             <td>00:00:00</td>
             <td>00:00:00</td>
           </tr>
-          <tr>
-            <td style="font-size: 1.3em;">ISHA</td>
+          <tr style="font-size: 1.4em;">
+            <td>ISHA</td>
             <td>00:00:00</td>
             <td>00:00:00</td>
           </tr>
@@ -417,12 +417,12 @@ div#timeUntilNextJamat {
       </table>
     </div>
     <div class="grid-item container-5" style="background: {{ $gradient }};">
-      <h1 style="color: white;" id="timeUntilNextJamat"></h1>
+      <h1 style="color: white; font-size: 3rem; margin-top: -1rem;" id="timeUntilNextJamat"></h1>
     </div>
     <div class="grid-item container-6" style="background: {{ $gradient }};">
       @foreach ($new as $news)
       <marquee>
-        <h1 style="color: #fff;">{{$news->newi}} {{$news->newii}} {{$news->newiii}} {{$news->newiv}} {{$news->newv}}
+        <h1 style="color: #fff; font-size: 2.9rem; margin-top: 0.7rem;">{{$news->newi}} {{$news->newii}} {{$news->newiii}} {{$news->newiv}} {{$news->newv}}
         </h1>
       </marquee>
       @endforeach
